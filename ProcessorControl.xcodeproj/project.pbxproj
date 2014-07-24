@@ -50,11 +50,9 @@
 		37913B241980F1B900E3B22A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37913B1E1980F18400E3B22A /* Security.framework */; };
 		37913B251980F1B900E3B22A /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37913B1C1980F17C00E3B22A /* ServiceManagement.framework */; };
 		37913B261980F1B900E3B22A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37913B1A1980F17300E3B22A /* CoreGraphics.framework */; };
-		37913B281980F1C400E3B22A /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37913B151980F0A900E3B22A /* Sparkle.framework */; };
-		37913B291980F1C400E3B22A /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37913B151980F0A900E3B22A /* Sparkle.framework */; };
 		37913B731980F93100E3B22A /* processorcontrol_server.c in Sources */ = {isa = PBXBuildFile; fileRef = 37913B721980F93100E3B22A /* processorcontrol_server.c */; };
 		37913B751980F99600E3B22A /* processorcontrol.defs in Sources */ = {isa = PBXBuildFile; fileRef = 37913B3D1980F4B900E3B22A /* processorcontrol.defs */; settings = {ATTRIBUTES = (Server, ); }; };
-		37913B801980FBBA00E3B22A /* im.danz.ProcessorControlServer in CopyFiles */ = {isa = PBXBuildFile; fileRef = 37913B6B1980F8FB00E3B22A /* im.danz.ProcessorControlServer */; };
+		37913B801980FBBA00E3B22A /* im.danz.ProcessorControlServer in CopyFiles */ = {isa = PBXBuildFile; fileRef = 37913B6B1980F8FB00E3B22A /* im.danz.ProcessorControlServer */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		37913B821980FBCE00E3B22A /* Everson Mono Bold Oblique.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 37913AEF1980EFB700E3B22A /* Everson Mono Bold Oblique.ttf */; };
 		37913B831980FBCE00E3B22A /* Everson Mono Bold.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 37913AF01980EFB700E3B22A /* Everson Mono Bold.ttf */; };
 		37913B841980FBCE00E3B22A /* Everson Mono Oblique.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 37913AF11980EFB700E3B22A /* Everson Mono Oblique.ttf */; };
@@ -70,7 +68,9 @@
 		37D2D8991981009F0043A48D /* libprocessorcontrol.c in Sources */ = {isa = PBXBuildFile; fileRef = 37913B401980F54D00E3B22A /* libprocessorcontrol.c */; };
 		37D2D89A1981009F0043A48D /* processorcontrol.defs in Sources */ = {isa = PBXBuildFile; fileRef = 37913B3D1980F4B900E3B22A /* processorcontrol.defs */; };
 		37D2D89B198100C80043A48D /* libprocessorcontrolr.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D2D8951981003A0043A48D /* libprocessorcontrolr.dylib */; };
-		37D2D89C198100D20043A48D /* libprocessorcontrolr.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37D2D8951981003A0043A48D /* libprocessorcontrolr.dylib */; };
+		37F07DA71981B0B900ED2B00 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F07DA61981B0B900ED2B00 /* Sparkle.framework */; };
+		37F07DA81981B0BE00ED2B00 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 37F07DA61981B0B900ED2B00 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		37F57AF51981AC2500A48A97 /* libprocessorcontrolr.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 37D2D8951981003A0043A48D /* libprocessorcontrolr.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,21 +88,23 @@
 			remoteGlobalIDString = 37913B6A1980F8FB00E3B22A;
 			remoteInfo = im.danz.ProcessorControlServer;
 		};
+		37F07DA91981B1C400ED2B00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37913A851980EE7D00E3B22A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37913A8C1980EE7D00E3B22A;
+			remoteInfo = ProcessorControl;
+		};
+		37F57AEB1981A57D00A48A97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37913A851980EE7D00E3B22A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37D2D8941981003A0043A48D;
+			remoteInfo = processorcontrolr;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		37913B2A1980F1C500E3B22A /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				37D2D89C198100D20043A48D /* libprocessorcontrolr.dylib in Embed Frameworks */,
-				37913B291980F1C400E3B22A /* Sparkle.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		37913B691980F8FB00E3B22A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -132,6 +134,17 @@
 				37913B831980FBCE00E3B22A /* Everson Mono Bold.ttf in CopyFiles */,
 				37913B841980FBCE00E3B22A /* Everson Mono Oblique.ttf in CopyFiles */,
 				37913B851980FBCE00E3B22A /* Everson Mono.ttf in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F57AF41981AC1400A48A97 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				37F57AF51981AC2500A48A97 /* libprocessorcontrolr.dylib in CopyFiles */,
+				37F07DA81981B0BE00ED2B00 /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +221,6 @@
 		37913B061980EFE300E3B22A /* Icon-VerySmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-VerySmall@2x.png"; sourceTree = "<group>"; };
 		37913B071980EFE300E3B22A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		37913B081980EFE300E3B22A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		37913B151980F0A900E3B22A /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = ../Sparkle.framework; sourceTree = "<group>"; };
 		37913B1A1980F17300E3B22A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		37913B1C1980F17C00E3B22A /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		37913B1E1980F18400E3B22A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -231,6 +243,7 @@
 		37913B901980FD4000E3B22A /* PCMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCMenuController.m; sourceTree = "<group>"; };
 		37D2D88B1980FFED0043A48D /* libprocessorcontrol.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libprocessorcontrol.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D2D8951981003A0043A48D /* libprocessorcontrolr.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libprocessorcontrolr.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F07DA61981B0B900ED2B00 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,9 +252,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				37D2D89B198100C80043A48D /* libprocessorcontrolr.dylib in Frameworks */,
+				37F07DA71981B0B900ED2B00 /* Sparkle.framework in Frameworks */,
 				37913B231980F1B900E3B22A /* Cocoa.framework in Frameworks */,
 				37913B241980F1B900E3B22A /* Security.framework in Frameworks */,
-				37913B281980F1C400E3B22A /* Sparkle.framework in Frameworks */,
 				37913B251980F1B900E3B22A /* ServiceManagement.framework in Frameworks */,
 				37913B261980F1B900E3B22A /* CoreGraphics.framework in Frameworks */,
 			);
@@ -460,14 +473,13 @@
 		37913B221980F19C00E3B22A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				37F07DA61981B0B900ED2B00 /* Sparkle.framework */,
 				37913B201980F18800E3B22A /* Cocoa.framework */,
 				37913B1E1980F18400E3B22A /* Security.framework */,
 				37913B1C1980F17C00E3B22A /* ServiceManagement.framework */,
 				37913B1A1980F17300E3B22A /* CoreGraphics.framework */,
-				37913B151980F0A900E3B22A /* Sparkle.framework */,
 			);
-			name = Frameworks;
-			path = ProcessorControlTests;
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		37913B301980F2C000E3B22A /* libprocessorcontrol */ = {
@@ -517,13 +529,14 @@
 				37913A891980EE7D00E3B22A /* Sources */,
 				37913A8A1980EE7D00E3B22A /* Frameworks */,
 				37913A8B1980EE7D00E3B22A /* Resources */,
-				37913B2A1980F1C500E3B22A /* Embed Frameworks */,
+				37F57AF41981AC1400A48A97 /* CopyFiles */,
 				37913B7F1980FBAB00E3B22A /* CopyFiles */,
 				37913B811980FBC100E3B22A /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				37F57AEC1981A57D00A48A97 /* PBXTargetDependency */,
 				37913B7D1980FB8700E3B22A /* PBXTargetDependency */,
 			);
 			name = ProcessorControl;
@@ -543,6 +556,7 @@
 			);
 			dependencies = (
 				37913AA21980EE7D00E3B22A /* PBXTargetDependency */,
+				37F07DAA1981B1C400ED2B00 /* PBXTargetDependency */,
 			);
 			name = ProcessorControlTests;
 			productName = ProcessorControlTests;
@@ -612,6 +626,7 @@
 				TargetAttributes = {
 					37913A8C1980EE7D00E3B22A = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = TUS5H2S763;
 					};
 					37913A9F1980EE7D00E3B22A = {
 						CreatedOnToolsVersion = 6.0;
@@ -767,6 +782,16 @@
 			target = 37913B6A1980F8FB00E3B22A /* im.danz.ProcessorControlServer */;
 			targetProxy = 37913B7C1980FB8700E3B22A /* PBXContainerItemProxy */;
 		};
+		37F07DAA1981B1C400ED2B00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37913A8C1980EE7D00E3B22A /* ProcessorControl */;
+			targetProxy = 37F07DA91981B1C400ED2B00 /* PBXContainerItemProxy */;
+		};
+		37F57AEC1981A57D00A48A97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37D2D8941981003A0043A48D /* processorcontrolr */;
+			targetProxy = 37F57AEB1981A57D00A48A97 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -815,7 +840,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx10.9;
@@ -851,7 +876,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx10.9;
 			};
@@ -862,11 +887,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_OPTIMIZATION_PROFILE_FILE = "";
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ProcessorControlTests",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = ProcessorControl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -887,6 +914,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ProcessorControlTests",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = ProcessorControl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -940,7 +969,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_OPTIMIZATION_PROFILE_FILE = "";
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1019,7 +1048,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_OPTIMIZATION_PROFILE_FILE = "";
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "";

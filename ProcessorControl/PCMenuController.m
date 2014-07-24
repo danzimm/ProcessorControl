@@ -64,7 +64,7 @@
 }
 
 - (IBAction)checkForUpdate:(id)sender {
-  [((PCAppDelegate *)[NSApplication sharedApplication].delegate).updater checkForUpdates:sender];
+  // TODO
 }
 
 

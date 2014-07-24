@@ -6,13 +6,11 @@
 //  Copyright (c) 2014 Dan Zimmerman. All rights reserved.
 //
 
-@import Foundation;
-#import <Sparkle/Sparkle.h>
+@import AppKit;
 
-@class SUUpdater, DZPreferencesWindowController;
+@class DZPreferencesWindowController;
 @interface PCAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (nonatomic) IBOutlet SUUpdater *updater;
 @property (nonatomic) IBOutlet DZPreferencesWindowController *preferencesWindowController;
 
 @end

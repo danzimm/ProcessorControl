@@ -94,7 +94,7 @@
                 <menuItem title="Check For Updates" id="3R1-4K-osh">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="checkForUpdate:" target="JKP-BC-BB6" id="UBI-78-Ahr"/>
+                        <action selector="checkForUpdate:" target="JKP-BC-BB6" id="a1R-ra-0hx"/>
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="8UC-Kw-tVE"/>

@@ -64,7 +64,6 @@
     if (!_popoverController) {
       _popoverController = [DZPopoverController popoverContollerWithStatusItemImage:[NSImage imageNamed:@"MenuIcon"] viewControllerClass:[PCMainViewController class]];
     }
-    [self.updater checkForUpdatesInBackground];
   }
 }
 
