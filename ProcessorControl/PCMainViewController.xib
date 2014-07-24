@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6185.11" systemVersion="14A298i" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6185.11"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PCMainViewController">
+            <connections>
+                <outlet property="matrix" destination="E2q-G9-owI" id="OfD-c0-zy7"/>
+                <outlet property="menuController" destination="JKP-BC-BB6" id="GWu-54-7nm"/>
+                <outlet property="titleLabel" destination="QQA-kt-unm" id="2nF-yB-cVB"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="338"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QQA-kt-unm">
+                    <rect key="frame" x="116" y="316" width="102" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="Cb3-gb-Qhu"/>
+                        <constraint firstAttribute="width" constant="98" id="mVJ-Jj-J44"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Processor Control" id="q2f-7n-BJF">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button focusRingType="none" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="96A-c7-Eia">
+                    <rect key="frame" x="20" y="316" width="23" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="4p1-Qs-FX0"/>
+                        <constraint firstAttribute="width" constant="23" id="riw-0B-hlH"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="MenuButton" imagePosition="only" alignment="center" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="7CD-Nl-E9e">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="menued:" target="JKP-BC-BB6" id="W9O-ZP-JXE"/>
+                    </connections>
+                </button>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="E2q-G9-owI" customClass="DZMatrixView">
+                    <rect key="frame" x="20" y="20" width="294" height="288"/>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="czd-Y8-EZR"/>
+                    </connections>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="E2q-G9-owI" secondAttribute="bottom" constant="20" id="6ge-U8-iU3"/>
+                <constraint firstItem="E2q-G9-owI" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="AQI-Lr-k81"/>
+                <constraint firstAttribute="centerX" secondItem="QQA-kt-unm" secondAttribute="centerX" id="CqG-Fm-l5U"/>
+                <constraint firstItem="E2q-G9-owI" firstAttribute="top" secondItem="QQA-kt-unm" secondAttribute="bottom" constant="8" id="XBQ-dH-uuk"/>
+                <constraint firstItem="96A-c7-Eia" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="8" id="XBl-Yt-Er0"/>
+                <constraint firstItem="QQA-kt-unm" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="8" id="hVb-1P-pRe"/>
+                <constraint firstItem="96A-c7-Eia" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="msA-Qg-CcL"/>
+                <constraint firstAttribute="trailing" secondItem="E2q-G9-owI" secondAttribute="trailing" constant="20" id="vwt-NL-epZ"/>
+            </constraints>
+        </customView>
+        <customObject id="JKP-BC-BB6" customClass="PCMenuController">
+            <connections>
+                <outlet property="menu" destination="IKe-aY-mVP" id="P4B-ab-Ut0"/>
+                <outlet property="menuButton" destination="96A-c7-Eia" id="zoC-WU-rZK"/>
+                <outlet property="showStatsItem" destination="lG8-tt-9tA" id="KLX-ZN-0sU"/>
+                <outlet property="startUpItem" destination="JO2-lx-caC" id="ixI-L6-QIk"/>
+            </connections>
+        </customObject>
+        <menu id="IKe-aY-mVP">
+            <items>
+                <menuItem title="Preferences" id="cZ7-KQ-bC3">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Preferences" id="vm5-sQ-aWv">
+                        <items>
+                            <menuItem title="Show Stats" id="lG8-tt-9tA">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="preferenceStats:" target="JKP-BC-BB6" id="7UM-Qn-xol"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Open at Login" id="JO2-lx-caC">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="toggleStartUp:" target="JKP-BC-BB6" id="dIb-Tl-Z1W"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Check For Updates" id="3R1-4K-osh">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="checkForUpdate:" target="JKP-BC-BB6" id="UBI-78-Ahr"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="8UC-Kw-tVE"/>
+                <menuItem title="Uninstall Helper" id="eEJ-YN-i4p">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleUninstall:" target="JKP-BC-BB6" id="eVo-sV-mic"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Help" id="Ugg-7Z-VtY">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleHelp:" target="JKP-BC-BB6" id="kep-q4-fsI"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="lvf-g5-Xwp"/>
+                <menuItem title="Quit" id="xbF-gv-aSp">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleQuit:" target="JKP-BC-BB6" id="EFz-en-2E8"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+    <resources>
+        <image name="MenuButton" width="248" height="200"/>
+    </resources>
+</document>

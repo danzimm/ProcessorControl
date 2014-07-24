@@ -1,0 +1,19 @@
+#include <mach/std_types.defs>
+#include <mach/mach_types.defs>
+
+subsystem processorcontrol 50000;
+
+serverprefix serv_;
+
+routine proccontrol_processors(
+  proccontrol_port : mach_port_t;
+  out out_processor_list : processor_array_t);
+
+routine proccontrol_version(
+  proccontrol_port : mach_port_t;
+  out version : uint64_t );
+
+routine proccontrol_uninstall(
+  proccontrol_port : mach_port_t);
+
+import "processorcontrol_base.h";

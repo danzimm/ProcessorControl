@@ -1,0 +1,1104 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37906FC11981878900BD638C /* MenuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 37906FBF1981878900BD638C /* MenuButton.png */; };
+		37906FC21981878900BD638C /* MenuButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37906FC01981878900BD638C /* MenuButton@2x.png */; };
+		37913A931980EE7D00E3B22A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913A921980EE7D00E3B22A /* main.m */; };
+		37913A961980EE7D00E3B22A /* PCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913A951980EE7D00E3B22A /* PCAppDelegate.m */; };
+		37913A981980EE7D00E3B22A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37913A971980EE7D00E3B22A /* Images.xcassets */; };
+		37913A9B1980EE7D00E3B22A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37913A991980EE7D00E3B22A /* MainMenu.xib */; };
+		37913AA71980EE7D00E3B22A /* ProcessorControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913AA61980EE7D00E3B22A /* ProcessorControlTests.m */; };
+		37913ACD1980EE9600E3B22A /* DZPopoverWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37913AB11980EE9600E3B22A /* DZPopoverWindowController.xib */; };
+		37913ACE1980EE9600E3B22A /* DZPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913AB31980EE9600E3B22A /* DZPopoverController.m */; };
+		37913ACF1980EE9600E3B22A /* DZPrivilegedHelperController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913AB51980EE9600E3B22A /* DZPrivilegedHelperController.m */; };
+		37913AD01980EE9600E3B22A /* DZCheat.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913AB71980EE9600E3B22A /* DZCheat.m */; };
+		37913AD11980EE9600E3B22A /* DZKeyboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913AB91980EE9600E3B22A /* DZKeyboardController.m */; };
+		37913AD21980EE9600E3B22A /* DZKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913ABB1980EE9600E3B22A /* DZKeyHandler.m */; };
+		37913AD31980EE9600E3B22A /* DZStartupHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913ABE1980EE9600E3B22A /* DZStartupHelper.m */; };
+		37913AD41980EE9600E3B22A /* DZStatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913AC11980EE9600E3B22A /* DZStatusItemView.m */; };
+		37913AD51980EE9600E3B22A /* DZPopoverWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913AC41980EE9600E3B22A /* DZPopoverWindowController.m */; };
+		37913AD61980EE9600E3B22A /* DZPopoverWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913AC61980EE9600E3B22A /* DZPopoverWindow.m */; };
+		37913AD71980EE9600E3B22A /* DZPopoverBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913AC81980EE9600E3B22A /* DZPopoverBackgroundView.m */; };
+		37913AD81980EE9600E3B22A /* NSObject+DelayedBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913ACA1980EE9600E3B22A /* NSObject+DelayedBlock.m */; };
+		37913AD91980EE9600E3B22A /* NSImage+invert.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913ACC1980EE9600E3B22A /* NSImage+invert.m */; };
+		37913AE51980EEA500E3B22A /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913ADC1980EEA500E3B22A /* UIColor+Hex.m */; };
+		37913AE61980EEA500E3B22A /* NSBezierPath+CGPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913ADE1980EEA500E3B22A /* NSBezierPath+CGPath.m */; };
+		37913AE71980EEA500E3B22A /* NSObject+Cascading.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913AE01980EEA500E3B22A /* NSObject+Cascading.m */; };
+		37913AE81980EEA500E3B22A /* Helpers.c in Sources */ = {isa = PBXBuildFile; fileRef = 37913AE31980EEA500E3B22A /* Helpers.c */; };
+		37913AED1980EF9C00E3B22A /* DZMatrixView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913AEC1980EF9C00E3B22A /* DZMatrixView.m */; };
+		37913AFB1980EFD900E3B22A /* MenuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 37913AF71980EFD900E3B22A /* MenuIcon.png */; };
+		37913AFC1980EFD900E3B22A /* MenuIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37913AF81980EFD900E3B22A /* MenuIcon@2x.png */; };
+		37913B091980EFE300E3B22A /* Icon-Base.png in Resources */ = {isa = PBXBuildFile; fileRef = 37913AFD1980EFE300E3B22A /* Icon-Base.png */; };
+		37913B0A1980EFE300E3B22A /* Icon-Base@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37913AFE1980EFE300E3B22A /* Icon-Base@2x.png */; };
+		37913B0B1980EFE300E3B22A /* Icon-Big.png in Resources */ = {isa = PBXBuildFile; fileRef = 37913AFF1980EFE300E3B22A /* Icon-Big.png */; };
+		37913B0C1980EFE300E3B22A /* Icon-Big@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37913B001980EFE300E3B22A /* Icon-Big@2x.png */; };
+		37913B0D1980EFE300E3B22A /* Icon-Mid.png in Resources */ = {isa = PBXBuildFile; fileRef = 37913B011980EFE300E3B22A /* Icon-Mid.png */; };
+		37913B0E1980EFE300E3B22A /* Icon-Mid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37913B021980EFE300E3B22A /* Icon-Mid@2x.png */; };
+		37913B0F1980EFE300E3B22A /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 37913B031980EFE300E3B22A /* Icon-Small.png */; };
+		37913B101980EFE300E3B22A /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37913B041980EFE300E3B22A /* Icon-Small@2x.png */; };
+		37913B111980EFE300E3B22A /* Icon-VerySmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 37913B051980EFE300E3B22A /* Icon-VerySmall.png */; };
+		37913B121980EFE300E3B22A /* Icon-VerySmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37913B061980EFE300E3B22A /* Icon-VerySmall@2x.png */; };
+		37913B131980EFE300E3B22A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 37913B071980EFE300E3B22A /* Icon.png */; };
+		37913B141980EFE300E3B22A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37913B081980EFE300E3B22A /* Icon@2x.png */; };
+		37913B231980F1B900E3B22A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37913B201980F18800E3B22A /* Cocoa.framework */; };
+		37913B241980F1B900E3B22A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37913B1E1980F18400E3B22A /* Security.framework */; };
+		37913B251980F1B900E3B22A /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37913B1C1980F17C00E3B22A /* ServiceManagement.framework */; };
+		37913B261980F1B900E3B22A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37913B1A1980F17300E3B22A /* CoreGraphics.framework */; };
+		37913B281980F1C400E3B22A /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37913B151980F0A900E3B22A /* Sparkle.framework */; };
+		37913B291980F1C400E3B22A /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37913B151980F0A900E3B22A /* Sparkle.framework */; };
+		37913B731980F93100E3B22A /* processorcontrol_server.c in Sources */ = {isa = PBXBuildFile; fileRef = 37913B721980F93100E3B22A /* processorcontrol_server.c */; };
+		37913B751980F99600E3B22A /* processorcontrol.defs in Sources */ = {isa = PBXBuildFile; fileRef = 37913B3D1980F4B900E3B22A /* processorcontrol.defs */; settings = {ATTRIBUTES = (Server, ); }; };
+		37913B801980FBBA00E3B22A /* im.danz.ProcessorControlServer in CopyFiles */ = {isa = PBXBuildFile; fileRef = 37913B6B1980F8FB00E3B22A /* im.danz.ProcessorControlServer */; };
+		37913B821980FBCE00E3B22A /* Everson Mono Bold Oblique.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 37913AEF1980EFB700E3B22A /* Everson Mono Bold Oblique.ttf */; };
+		37913B831980FBCE00E3B22A /* Everson Mono Bold.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 37913AF01980EFB700E3B22A /* Everson Mono Bold.ttf */; };
+		37913B841980FBCE00E3B22A /* Everson Mono Oblique.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 37913AF11980EFB700E3B22A /* Everson Mono Oblique.ttf */; };
+		37913B851980FBCE00E3B22A /* Everson Mono.ttf in CopyFiles */ = {isa = PBXBuildFile; fileRef = 37913AF21980EFB700E3B22A /* Everson Mono.ttf */; };
+		37913B881980FD3100E3B22A /* PCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913B871980FD3100E3B22A /* PCMainViewController.m */; };
+		37913B8A1980FD3800E3B22A /* PCMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37913B891980FD3800E3B22A /* PCMainViewController.xib */; };
+		37913B911980FD4000E3B22A /* DZProcessorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913B8C1980FD4000E3B22A /* DZProcessorCell.m */; };
+		37913B921980FD4000E3B22A /* PCPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913B8E1980FD4000E3B22A /* PCPreferencesController.m */; };
+		37913B931980FD4000E3B22A /* PCMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913B901980FD4000E3B22A /* PCMenuController.m */; };
+		37913B941980FDC400E3B22A /* processorcontrol.defs in Sources */ = {isa = PBXBuildFile; fileRef = 37913B3D1980F4B900E3B22A /* processorcontrol.defs */; };
+		37D2D88F1980FFF30043A48D /* libprocessorcontrol.c in Sources */ = {isa = PBXBuildFile; fileRef = 37913B401980F54D00E3B22A /* libprocessorcontrol.c */; };
+		37D2D8901980FFF50043A48D /* processorcontrol.defs in Sources */ = {isa = PBXBuildFile; fileRef = 37913B3D1980F4B900E3B22A /* processorcontrol.defs */; };
+		37D2D8991981009F0043A48D /* libprocessorcontrol.c in Sources */ = {isa = PBXBuildFile; fileRef = 37913B401980F54D00E3B22A /* libprocessorcontrol.c */; };
+		37D2D89A1981009F0043A48D /* processorcontrol.defs in Sources */ = {isa = PBXBuildFile; fileRef = 37913B3D1980F4B900E3B22A /* processorcontrol.defs */; };
+		37D2D89B198100C80043A48D /* libprocessorcontrolr.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D2D8951981003A0043A48D /* libprocessorcontrolr.dylib */; };
+		37D2D89C198100D20043A48D /* libprocessorcontrolr.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37D2D8951981003A0043A48D /* libprocessorcontrolr.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37913AA11980EE7D00E3B22A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37913A851980EE7D00E3B22A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37913A8C1980EE7D00E3B22A;
+			remoteInfo = ProcessorControl;
+		};
+		37913B7C1980FB8700E3B22A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37913A851980EE7D00E3B22A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37913B6A1980F8FB00E3B22A;
+			remoteInfo = im.danz.ProcessorControlServer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		37913B2A1980F1C500E3B22A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				37D2D89C198100D20043A48D /* libprocessorcontrolr.dylib in Embed Frameworks */,
+				37913B291980F1C400E3B22A /* Sparkle.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37913B691980F8FB00E3B22A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		37913B7F1980FBAB00E3B22A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				37913B801980FBBA00E3B22A /* im.danz.ProcessorControlServer in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37913B811980FBC100E3B22A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Fonts;
+			dstSubfolderSpec = 7;
+			files = (
+				37913B821980FBCE00E3B22A /* Everson Mono Bold Oblique.ttf in CopyFiles */,
+				37913B831980FBCE00E3B22A /* Everson Mono Bold.ttf in CopyFiles */,
+				37913B841980FBCE00E3B22A /* Everson Mono Oblique.ttf in CopyFiles */,
+				37913B851980FBCE00E3B22A /* Everson Mono.ttf in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		37906FBF1981878900BD638C /* MenuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuButton.png; sourceTree = "<group>"; };
+		37906FC01981878900BD638C /* MenuButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MenuButton@2x.png"; sourceTree = "<group>"; };
+		37913A8D1980EE7D00E3B22A /* ProcessorControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProcessorControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37913A911980EE7D00E3B22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37913A921980EE7D00E3B22A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		37913A941980EE7D00E3B22A /* PCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCAppDelegate.h; sourceTree = "<group>"; };
+		37913A951980EE7D00E3B22A /* PCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCAppDelegate.m; sourceTree = "<group>"; };
+		37913A971980EE7D00E3B22A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		37913A9A1980EE7D00E3B22A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		37913AA01980EE7D00E3B22A /* ProcessorControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProcessorControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37913AA51980EE7D00E3B22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37913AA61980EE7D00E3B22A /* ProcessorControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProcessorControlTests.m; sourceTree = "<group>"; };
+		37913AB11980EE9600E3B22A /* DZPopoverWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZPopoverWindowController.xib; sourceTree = "<group>"; };
+		37913AB21980EE9600E3B22A /* DZPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPopoverController.h; sourceTree = "<group>"; };
+		37913AB31980EE9600E3B22A /* DZPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZPopoverController.m; sourceTree = "<group>"; };
+		37913AB41980EE9600E3B22A /* DZPrivilegedHelperController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPrivilegedHelperController.h; sourceTree = "<group>"; };
+		37913AB51980EE9600E3B22A /* DZPrivilegedHelperController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZPrivilegedHelperController.m; sourceTree = "<group>"; };
+		37913AB61980EE9600E3B22A /* DZCheat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCheat.h; sourceTree = "<group>"; };
+		37913AB71980EE9600E3B22A /* DZCheat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCheat.m; sourceTree = "<group>"; };
+		37913AB81980EE9600E3B22A /* DZKeyboardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZKeyboardController.h; sourceTree = "<group>"; };
+		37913AB91980EE9600E3B22A /* DZKeyboardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZKeyboardController.m; sourceTree = "<group>"; };
+		37913ABA1980EE9600E3B22A /* DZKeyHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZKeyHandler.h; sourceTree = "<group>"; };
+		37913ABB1980EE9600E3B22A /* DZKeyHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZKeyHandler.m; sourceTree = "<group>"; };
+		37913ABC1980EE9600E3B22A /* DZKeyHandlerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZKeyHandlerController.h; sourceTree = "<group>"; };
+		37913ABD1980EE9600E3B22A /* DZStartupHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZStartupHelper.h; sourceTree = "<group>"; };
+		37913ABE1980EE9600E3B22A /* DZStartupHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZStartupHelper.m; sourceTree = "<group>"; };
+		37913ABF1980EE9600E3B22A /* DZStatusItemViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZStatusItemViewDelegate.h; sourceTree = "<group>"; };
+		37913AC01980EE9600E3B22A /* DZStatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZStatusItemView.h; sourceTree = "<group>"; };
+		37913AC11980EE9600E3B22A /* DZStatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZStatusItemView.m; sourceTree = "<group>"; };
+		37913AC21980EE9600E3B22A /* DZViewContollerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZViewContollerAdditions.h; sourceTree = "<group>"; };
+		37913AC31980EE9600E3B22A /* DZPopoverWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPopoverWindowController.h; sourceTree = "<group>"; };
+		37913AC41980EE9600E3B22A /* DZPopoverWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZPopoverWindowController.m; sourceTree = "<group>"; };
+		37913AC51980EE9600E3B22A /* DZPopoverWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPopoverWindow.h; sourceTree = "<group>"; };
+		37913AC61980EE9600E3B22A /* DZPopoverWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZPopoverWindow.m; sourceTree = "<group>"; };
+		37913AC71980EE9600E3B22A /* DZPopoverBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPopoverBackgroundView.h; sourceTree = "<group>"; };
+		37913AC81980EE9600E3B22A /* DZPopoverBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZPopoverBackgroundView.m; sourceTree = "<group>"; };
+		37913AC91980EE9600E3B22A /* NSObject+DelayedBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DelayedBlock.h"; sourceTree = "<group>"; };
+		37913ACA1980EE9600E3B22A /* NSObject+DelayedBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DelayedBlock.m"; sourceTree = "<group>"; };
+		37913ACB1980EE9600E3B22A /* NSImage+invert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+invert.h"; sourceTree = "<group>"; };
+		37913ACC1980EE9600E3B22A /* NSImage+invert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+invert.m"; sourceTree = "<group>"; };
+		37913ADB1980EEA500E3B22A /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		37913ADC1980EEA500E3B22A /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		37913ADD1980EEA500E3B22A /* NSBezierPath+CGPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+CGPath.h"; sourceTree = "<group>"; };
+		37913ADE1980EEA500E3B22A /* NSBezierPath+CGPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+CGPath.m"; sourceTree = "<group>"; };
+		37913ADF1980EEA500E3B22A /* NSObject+Cascading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Cascading.h"; sourceTree = "<group>"; };
+		37913AE01980EEA500E3B22A /* NSObject+Cascading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Cascading.m"; sourceTree = "<group>"; };
+		37913AE21980EEA500E3B22A /* Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = "<group>"; };
+		37913AE31980EEA500E3B22A /* Helpers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Helpers.c; sourceTree = "<group>"; };
+		37913AE41980EEA500E3B22A /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		37913AEA1980EF9C00E3B22A /* DZMatrixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMatrixView.h; sourceTree = "<group>"; };
+		37913AEB1980EF9C00E3B22A /* DZMatrixViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMatrixViewDelegate.h; sourceTree = "<group>"; };
+		37913AEC1980EF9C00E3B22A /* DZMatrixView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMatrixView.m; sourceTree = "<group>"; };
+		37913AEF1980EFB700E3B22A /* Everson Mono Bold Oblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Everson Mono Bold Oblique.ttf"; sourceTree = "<group>"; };
+		37913AF01980EFB700E3B22A /* Everson Mono Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Everson Mono Bold.ttf"; sourceTree = "<group>"; };
+		37913AF11980EFB700E3B22A /* Everson Mono Oblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Everson Mono Oblique.ttf"; sourceTree = "<group>"; };
+		37913AF21980EFB700E3B22A /* Everson Mono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Everson Mono.ttf"; sourceTree = "<group>"; };
+		37913AF71980EFD900E3B22A /* MenuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuIcon.png; sourceTree = "<group>"; };
+		37913AF81980EFD900E3B22A /* MenuIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MenuIcon@2x.png"; sourceTree = "<group>"; };
+		37913AFD1980EFE300E3B22A /* Icon-Base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Base.png"; sourceTree = "<group>"; };
+		37913AFE1980EFE300E3B22A /* Icon-Base@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Base@2x.png"; sourceTree = "<group>"; };
+		37913AFF1980EFE300E3B22A /* Icon-Big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Big.png"; sourceTree = "<group>"; };
+		37913B001980EFE300E3B22A /* Icon-Big@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Big@2x.png"; sourceTree = "<group>"; };
+		37913B011980EFE300E3B22A /* Icon-Mid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Mid.png"; sourceTree = "<group>"; };
+		37913B021980EFE300E3B22A /* Icon-Mid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Mid@2x.png"; sourceTree = "<group>"; };
+		37913B031980EFE300E3B22A /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		37913B041980EFE300E3B22A /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		37913B051980EFE300E3B22A /* Icon-VerySmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-VerySmall.png"; sourceTree = "<group>"; };
+		37913B061980EFE300E3B22A /* Icon-VerySmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-VerySmall@2x.png"; sourceTree = "<group>"; };
+		37913B071980EFE300E3B22A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		37913B081980EFE300E3B22A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		37913B151980F0A900E3B22A /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = ../Sparkle.framework; sourceTree = "<group>"; };
+		37913B1A1980F17300E3B22A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		37913B1C1980F17C00E3B22A /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		37913B1E1980F18400E3B22A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		37913B201980F18800E3B22A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		37913B3D1980F4B900E3B22A /* processorcontrol.defs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.mig; path = processorcontrol.defs; sourceTree = "<group>"; };
+		37913B3F1980F4EF00E3B22A /* processorcontrol_base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = processorcontrol_base.h; sourceTree = "<group>"; };
+		37913B401980F54D00E3B22A /* libprocessorcontrol.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libprocessorcontrol.c; sourceTree = "<group>"; };
+		37913B6B1980F8FB00E3B22A /* im.danz.ProcessorControlServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = im.danz.ProcessorControlServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		37913B721980F93100E3B22A /* processorcontrol_server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = processorcontrol_server.c; sourceTree = "<group>"; };
+		37913B781980FB1400E3B22A /* ProcessorControlServer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProcessorControlServer-Info.plist"; sourceTree = "<group>"; };
+		37913B791980FB1400E3B22A /* ProcessorControlServer-Launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProcessorControlServer-Launchd.plist"; sourceTree = "<group>"; };
+		37913B861980FD3100E3B22A /* PCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCMainViewController.h; sourceTree = "<group>"; };
+		37913B871980FD3100E3B22A /* PCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCMainViewController.m; sourceTree = "<group>"; };
+		37913B891980FD3800E3B22A /* PCMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PCMainViewController.xib; sourceTree = "<group>"; };
+		37913B8B1980FD4000E3B22A /* DZProcessorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZProcessorCell.h; sourceTree = "<group>"; };
+		37913B8C1980FD4000E3B22A /* DZProcessorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZProcessorCell.m; sourceTree = "<group>"; };
+		37913B8D1980FD4000E3B22A /* PCPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCPreferencesController.h; sourceTree = "<group>"; };
+		37913B8E1980FD4000E3B22A /* PCPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCPreferencesController.m; sourceTree = "<group>"; };
+		37913B8F1980FD4000E3B22A /* PCMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCMenuController.h; sourceTree = "<group>"; };
+		37913B901980FD4000E3B22A /* PCMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCMenuController.m; sourceTree = "<group>"; };
+		37D2D88B1980FFED0043A48D /* libprocessorcontrol.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libprocessorcontrol.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		37D2D8951981003A0043A48D /* libprocessorcontrolr.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libprocessorcontrolr.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37913A8A1980EE7D00E3B22A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37D2D89B198100C80043A48D /* libprocessorcontrolr.dylib in Frameworks */,
+				37913B231980F1B900E3B22A /* Cocoa.framework in Frameworks */,
+				37913B241980F1B900E3B22A /* Security.framework in Frameworks */,
+				37913B281980F1C400E3B22A /* Sparkle.framework in Frameworks */,
+				37913B251980F1B900E3B22A /* ServiceManagement.framework in Frameworks */,
+				37913B261980F1B900E3B22A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37913A9D1980EE7D00E3B22A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37913B681980F8FB00E3B22A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37D2D8881980FFED0043A48D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37D2D8921981003A0043A48D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37913A841980EE7D00E3B22A = {
+			isa = PBXGroup;
+			children = (
+				37913AE91980EF9600E3B22A /* Views */,
+				37913ADA1980EE9B00E3B22A /* Helpers */,
+				37913AB01980EE8300E3B22A /* MenuBar Framework */,
+				37913A8F1980EE7D00E3B22A /* ProcessorControl */,
+				37913B301980F2C000E3B22A /* libprocessorcontrol */,
+				37913B6C1980F8FB00E3B22A /* im.danz.ProcessorControlServer */,
+				37913B221980F19C00E3B22A /* Frameworks */,
+				37913AA31980EE7D00E3B22A /* ProcessorControlTests */,
+				37913A8E1980EE7D00E3B22A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		37913A8E1980EE7D00E3B22A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37913A8D1980EE7D00E3B22A /* ProcessorControl.app */,
+				37913AA01980EE7D00E3B22A /* ProcessorControlTests.xctest */,
+				37913B6B1980F8FB00E3B22A /* im.danz.ProcessorControlServer */,
+				37D2D88B1980FFED0043A48D /* libprocessorcontrol.dylib */,
+				37D2D8951981003A0043A48D /* libprocessorcontrolr.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37913A8F1980EE7D00E3B22A /* ProcessorControl */ = {
+			isa = PBXGroup;
+			children = (
+				37913A941980EE7D00E3B22A /* PCAppDelegate.h */,
+				37913A951980EE7D00E3B22A /* PCAppDelegate.m */,
+				37913B861980FD3100E3B22A /* PCMainViewController.h */,
+				37913B871980FD3100E3B22A /* PCMainViewController.m */,
+				37913B8B1980FD4000E3B22A /* DZProcessorCell.h */,
+				37913B8C1980FD4000E3B22A /* DZProcessorCell.m */,
+				37913B8D1980FD4000E3B22A /* PCPreferencesController.h */,
+				37913B8E1980FD4000E3B22A /* PCPreferencesController.m */,
+				37913B8F1980FD4000E3B22A /* PCMenuController.h */,
+				37913B901980FD4000E3B22A /* PCMenuController.m */,
+				37913A971980EE7D00E3B22A /* Images.xcassets */,
+				37913A991980EE7D00E3B22A /* MainMenu.xib */,
+				37913B891980FD3800E3B22A /* PCMainViewController.xib */,
+				37913A901980EE7D00E3B22A /* Supporting Files */,
+			);
+			path = ProcessorControl;
+			sourceTree = "<group>";
+		};
+		37913A901980EE7D00E3B22A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37913AF31980EFC300E3B22A /* Images */,
+				37913AEE1980EFB000E3B22A /* Fonts */,
+				37913A911980EE7D00E3B22A /* Info.plist */,
+				37913A921980EE7D00E3B22A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37913AA31980EE7D00E3B22A /* ProcessorControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				37913AA61980EE7D00E3B22A /* ProcessorControlTests.m */,
+				37913AA41980EE7D00E3B22A /* Supporting Files */,
+			);
+			path = ProcessorControlTests;
+			sourceTree = "<group>";
+		};
+		37913AA41980EE7D00E3B22A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37913AA51980EE7D00E3B22A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37913AB01980EE8300E3B22A /* MenuBar Framework */ = {
+			isa = PBXGroup;
+			children = (
+				37913AB11980EE9600E3B22A /* DZPopoverWindowController.xib */,
+				37913AB21980EE9600E3B22A /* DZPopoverController.h */,
+				37913AB31980EE9600E3B22A /* DZPopoverController.m */,
+				37913AB41980EE9600E3B22A /* DZPrivilegedHelperController.h */,
+				37913AB51980EE9600E3B22A /* DZPrivilegedHelperController.m */,
+				37913AB61980EE9600E3B22A /* DZCheat.h */,
+				37913AB71980EE9600E3B22A /* DZCheat.m */,
+				37913AB81980EE9600E3B22A /* DZKeyboardController.h */,
+				37913AB91980EE9600E3B22A /* DZKeyboardController.m */,
+				37913ABA1980EE9600E3B22A /* DZKeyHandler.h */,
+				37913ABB1980EE9600E3B22A /* DZKeyHandler.m */,
+				37913ABC1980EE9600E3B22A /* DZKeyHandlerController.h */,
+				37913ABD1980EE9600E3B22A /* DZStartupHelper.h */,
+				37913ABE1980EE9600E3B22A /* DZStartupHelper.m */,
+				37913ABF1980EE9600E3B22A /* DZStatusItemViewDelegate.h */,
+				37913AC01980EE9600E3B22A /* DZStatusItemView.h */,
+				37913AC11980EE9600E3B22A /* DZStatusItemView.m */,
+				37913AC21980EE9600E3B22A /* DZViewContollerAdditions.h */,
+				37913AC31980EE9600E3B22A /* DZPopoverWindowController.h */,
+				37913AC41980EE9600E3B22A /* DZPopoverWindowController.m */,
+				37913AC51980EE9600E3B22A /* DZPopoverWindow.h */,
+				37913AC61980EE9600E3B22A /* DZPopoverWindow.m */,
+				37913AC71980EE9600E3B22A /* DZPopoverBackgroundView.h */,
+				37913AC81980EE9600E3B22A /* DZPopoverBackgroundView.m */,
+				37913AC91980EE9600E3B22A /* NSObject+DelayedBlock.h */,
+				37913ACA1980EE9600E3B22A /* NSObject+DelayedBlock.m */,
+				37913ACB1980EE9600E3B22A /* NSImage+invert.h */,
+				37913ACC1980EE9600E3B22A /* NSImage+invert.m */,
+			);
+			name = "MenuBar Framework";
+			sourceTree = "<group>";
+		};
+		37913ADA1980EE9B00E3B22A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				37913ADB1980EEA500E3B22A /* UIColor+Hex.h */,
+				37913ADC1980EEA500E3B22A /* UIColor+Hex.m */,
+				37913ADD1980EEA500E3B22A /* NSBezierPath+CGPath.h */,
+				37913ADE1980EEA500E3B22A /* NSBezierPath+CGPath.m */,
+				37913ADF1980EEA500E3B22A /* NSObject+Cascading.h */,
+				37913AE01980EEA500E3B22A /* NSObject+Cascading.m */,
+				37913AE21980EEA500E3B22A /* Helpers.h */,
+				37913AE31980EEA500E3B22A /* Helpers.c */,
+				37913AE41980EEA500E3B22A /* Macros.h */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		37913AE91980EF9600E3B22A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				37913AEA1980EF9C00E3B22A /* DZMatrixView.h */,
+				37913AEB1980EF9C00E3B22A /* DZMatrixViewDelegate.h */,
+				37913AEC1980EF9C00E3B22A /* DZMatrixView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		37913AEE1980EFB000E3B22A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				37913AEF1980EFB700E3B22A /* Everson Mono Bold Oblique.ttf */,
+				37913AF01980EFB700E3B22A /* Everson Mono Bold.ttf */,
+				37913AF11980EFB700E3B22A /* Everson Mono Oblique.ttf */,
+				37913AF21980EFB700E3B22A /* Everson Mono.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		37913AF31980EFC300E3B22A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				37906FBF1981878900BD638C /* MenuButton.png */,
+				37906FC01981878900BD638C /* MenuButton@2x.png */,
+				37913AF71980EFD900E3B22A /* MenuIcon.png */,
+				37913AF81980EFD900E3B22A /* MenuIcon@2x.png */,
+				37913AF41980EFD000E3B22A /* Icons */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		37913AF41980EFD000E3B22A /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				37913AFD1980EFE300E3B22A /* Icon-Base.png */,
+				37913AFE1980EFE300E3B22A /* Icon-Base@2x.png */,
+				37913AFF1980EFE300E3B22A /* Icon-Big.png */,
+				37913B001980EFE300E3B22A /* Icon-Big@2x.png */,
+				37913B011980EFE300E3B22A /* Icon-Mid.png */,
+				37913B021980EFE300E3B22A /* Icon-Mid@2x.png */,
+				37913B031980EFE300E3B22A /* Icon-Small.png */,
+				37913B041980EFE300E3B22A /* Icon-Small@2x.png */,
+				37913B051980EFE300E3B22A /* Icon-VerySmall.png */,
+				37913B061980EFE300E3B22A /* Icon-VerySmall@2x.png */,
+				37913B071980EFE300E3B22A /* Icon.png */,
+				37913B081980EFE300E3B22A /* Icon@2x.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		37913B221980F19C00E3B22A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37913B201980F18800E3B22A /* Cocoa.framework */,
+				37913B1E1980F18400E3B22A /* Security.framework */,
+				37913B1C1980F17C00E3B22A /* ServiceManagement.framework */,
+				37913B1A1980F17300E3B22A /* CoreGraphics.framework */,
+				37913B151980F0A900E3B22A /* Sparkle.framework */,
+			);
+			name = Frameworks;
+			path = ProcessorControlTests;
+			sourceTree = "<group>";
+		};
+		37913B301980F2C000E3B22A /* libprocessorcontrol */ = {
+			isa = PBXGroup;
+			children = (
+				37913B3F1980F4EF00E3B22A /* processorcontrol_base.h */,
+				37913B401980F54D00E3B22A /* libprocessorcontrol.c */,
+				37913B3D1980F4B900E3B22A /* processorcontrol.defs */,
+			);
+			path = libprocessorcontrol;
+			sourceTree = "<group>";
+		};
+		37913B6C1980F8FB00E3B22A /* im.danz.ProcessorControlServer */ = {
+			isa = PBXGroup;
+			children = (
+				37913B781980FB1400E3B22A /* ProcessorControlServer-Info.plist */,
+				37913B791980FB1400E3B22A /* ProcessorControlServer-Launchd.plist */,
+				37913B721980F93100E3B22A /* processorcontrol_server.c */,
+			);
+			path = im.danz.ProcessorControlServer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		37D2D8891980FFED0043A48D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37D2D8931981003A0043A48D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		37913A8C1980EE7D00E3B22A /* ProcessorControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37913AAA1980EE7D00E3B22A /* Build configuration list for PBXNativeTarget "ProcessorControl" */;
+			buildPhases = (
+				37913A891980EE7D00E3B22A /* Sources */,
+				37913A8A1980EE7D00E3B22A /* Frameworks */,
+				37913A8B1980EE7D00E3B22A /* Resources */,
+				37913B2A1980F1C500E3B22A /* Embed Frameworks */,
+				37913B7F1980FBAB00E3B22A /* CopyFiles */,
+				37913B811980FBC100E3B22A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37913B7D1980FB8700E3B22A /* PBXTargetDependency */,
+			);
+			name = ProcessorControl;
+			productName = ProcessorControl;
+			productReference = 37913A8D1980EE7D00E3B22A /* ProcessorControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		37913A9F1980EE7D00E3B22A /* ProcessorControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37913AAD1980EE7D00E3B22A /* Build configuration list for PBXNativeTarget "ProcessorControlTests" */;
+			buildPhases = (
+				37913A9C1980EE7D00E3B22A /* Sources */,
+				37913A9D1980EE7D00E3B22A /* Frameworks */,
+				37913A9E1980EE7D00E3B22A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37913AA21980EE7D00E3B22A /* PBXTargetDependency */,
+			);
+			name = ProcessorControlTests;
+			productName = ProcessorControlTests;
+			productReference = 37913AA01980EE7D00E3B22A /* ProcessorControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		37913B6A1980F8FB00E3B22A /* im.danz.ProcessorControlServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37913B6F1980F8FB00E3B22A /* Build configuration list for PBXNativeTarget "im.danz.ProcessorControlServer" */;
+			buildPhases = (
+				37913B671980F8FB00E3B22A /* Sources */,
+				37913B681980F8FB00E3B22A /* Frameworks */,
+				37913B691980F8FB00E3B22A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = im.danz.ProcessorControlServer;
+			productName = im.danz.ProcessorControlServer;
+			productReference = 37913B6B1980F8FB00E3B22A /* im.danz.ProcessorControlServer */;
+			productType = "com.apple.product-type.tool";
+		};
+		37D2D88A1980FFED0043A48D /* processorcontrol */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37D2D88C1980FFED0043A48D /* Build configuration list for PBXNativeTarget "processorcontrol" */;
+			buildPhases = (
+				37D2D8871980FFED0043A48D /* Sources */,
+				37D2D8881980FFED0043A48D /* Frameworks */,
+				37D2D8891980FFED0043A48D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = processorcontrol;
+			productName = processorcontrol;
+			productReference = 37D2D88B1980FFED0043A48D /* libprocessorcontrol.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		37D2D8941981003A0043A48D /* processorcontrolr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37D2D8961981003A0043A48D /* Build configuration list for PBXNativeTarget "processorcontrolr" */;
+			buildPhases = (
+				37D2D8911981003A0043A48D /* Sources */,
+				37D2D8921981003A0043A48D /* Frameworks */,
+				37D2D8931981003A0043A48D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = processorcontrolr;
+			productName = processorcontrolr;
+			productReference = 37D2D8951981003A0043A48D /* libprocessorcontrolr.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37913A851980EE7D00E3B22A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PC;
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Dan Zimmerman";
+				TargetAttributes = {
+					37913A8C1980EE7D00E3B22A = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					37913A9F1980EE7D00E3B22A = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 37913A8C1980EE7D00E3B22A;
+					};
+					37913B6A1980F8FB00E3B22A = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					37D2D88A1980FFED0043A48D = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					37D2D8941981003A0043A48D = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = 37913A881980EE7D00E3B22A /* Build configuration list for PBXProject "ProcessorControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 37913A841980EE7D00E3B22A;
+			productRefGroup = 37913A8E1980EE7D00E3B22A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37913A8C1980EE7D00E3B22A /* ProcessorControl */,
+				37913A9F1980EE7D00E3B22A /* ProcessorControlTests */,
+				37913B6A1980F8FB00E3B22A /* im.danz.ProcessorControlServer */,
+				37D2D88A1980FFED0043A48D /* processorcontrol */,
+				37D2D8941981003A0043A48D /* processorcontrolr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37913A8B1980EE7D00E3B22A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37913B131980EFE300E3B22A /* Icon.png in Resources */,
+				37913AFC1980EFD900E3B22A /* MenuIcon@2x.png in Resources */,
+				37913B0C1980EFE300E3B22A /* Icon-Big@2x.png in Resources */,
+				37913B091980EFE300E3B22A /* Icon-Base.png in Resources */,
+				37906FC11981878900BD638C /* MenuButton.png in Resources */,
+				37913B101980EFE300E3B22A /* Icon-Small@2x.png in Resources */,
+				37913A981980EE7D00E3B22A /* Images.xcassets in Resources */,
+				37913B0B1980EFE300E3B22A /* Icon-Big.png in Resources */,
+				37913A9B1980EE7D00E3B22A /* MainMenu.xib in Resources */,
+				37913B0D1980EFE300E3B22A /* Icon-Mid.png in Resources */,
+				37913B0F1980EFE300E3B22A /* Icon-Small.png in Resources */,
+				37913B111980EFE300E3B22A /* Icon-VerySmall.png in Resources */,
+				37913B0E1980EFE300E3B22A /* Icon-Mid@2x.png in Resources */,
+				37913AFB1980EFD900E3B22A /* MenuIcon.png in Resources */,
+				37913ACD1980EE9600E3B22A /* DZPopoverWindowController.xib in Resources */,
+				37913B141980EFE300E3B22A /* Icon@2x.png in Resources */,
+				37913B8A1980FD3800E3B22A /* PCMainViewController.xib in Resources */,
+				37913B0A1980EFE300E3B22A /* Icon-Base@2x.png in Resources */,
+				37913B121980EFE300E3B22A /* Icon-VerySmall@2x.png in Resources */,
+				37906FC21981878900BD638C /* MenuButton@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37913A9E1980EE7D00E3B22A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37913A891980EE7D00E3B22A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37913B941980FDC400E3B22A /* processorcontrol.defs in Sources */,
+				37913AD71980EE9600E3B22A /* DZPopoverBackgroundView.m in Sources */,
+				37913AE61980EEA500E3B22A /* NSBezierPath+CGPath.m in Sources */,
+				37913AE51980EEA500E3B22A /* UIColor+Hex.m in Sources */,
+				37913A961980EE7D00E3B22A /* PCAppDelegate.m in Sources */,
+				37913B881980FD3100E3B22A /* PCMainViewController.m in Sources */,
+				37913B921980FD4000E3B22A /* PCPreferencesController.m in Sources */,
+				37913ACE1980EE9600E3B22A /* DZPopoverController.m in Sources */,
+				37913B911980FD4000E3B22A /* DZProcessorCell.m in Sources */,
+				37913B931980FD4000E3B22A /* PCMenuController.m in Sources */,
+				37913ACF1980EE9600E3B22A /* DZPrivilegedHelperController.m in Sources */,
+				37913AD51980EE9600E3B22A /* DZPopoverWindowController.m in Sources */,
+				37913A931980EE7D00E3B22A /* main.m in Sources */,
+				37913AD81980EE9600E3B22A /* NSObject+DelayedBlock.m in Sources */,
+				37913AED1980EF9C00E3B22A /* DZMatrixView.m in Sources */,
+				37913AD11980EE9600E3B22A /* DZKeyboardController.m in Sources */,
+				37913AD91980EE9600E3B22A /* NSImage+invert.m in Sources */,
+				37913AE71980EEA500E3B22A /* NSObject+Cascading.m in Sources */,
+				37913AD61980EE9600E3B22A /* DZPopoverWindow.m in Sources */,
+				37913AD31980EE9600E3B22A /* DZStartupHelper.m in Sources */,
+				37913AD01980EE9600E3B22A /* DZCheat.m in Sources */,
+				37913AE81980EEA500E3B22A /* Helpers.c in Sources */,
+				37913AD41980EE9600E3B22A /* DZStatusItemView.m in Sources */,
+				37913AD21980EE9600E3B22A /* DZKeyHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37913A9C1980EE7D00E3B22A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37913AA71980EE7D00E3B22A /* ProcessorControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37913B671980F8FB00E3B22A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37913B751980F99600E3B22A /* processorcontrol.defs in Sources */,
+				37913B731980F93100E3B22A /* processorcontrol_server.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37D2D8871980FFED0043A48D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37D2D88F1980FFF30043A48D /* libprocessorcontrol.c in Sources */,
+				37D2D8901980FFF50043A48D /* processorcontrol.defs in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37D2D8911981003A0043A48D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37D2D8991981009F0043A48D /* libprocessorcontrol.c in Sources */,
+				37D2D89A1981009F0043A48D /* processorcontrol.defs in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37913AA21980EE7D00E3B22A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37913A8C1980EE7D00E3B22A /* ProcessorControl */;
+			targetProxy = 37913AA11980EE7D00E3B22A /* PBXContainerItemProxy */;
+		};
+		37913B7D1980FB8700E3B22A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37913B6A1980F8FB00E3B22A /* im.danz.ProcessorControlServer */;
+			targetProxy = 37913B7C1980FB8700E3B22A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		37913A991980EE7D00E3B22A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37913A9A1980EE7D00E3B22A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		37913AA81980EE7D00E3B22A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		37913AA91980EE7D00E3B22A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		37913AAB1980EE7D00E3B22A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_OPTIMIZATION_PROFILE_FILE = "";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ProcessorControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		37913AAC1980EE7D00E3B22A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_OPTIMIZATION_PROFILE_FILE = "";
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ProcessorControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		37913AAE1980EE7D00E3B22A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ProcessorControl.app/Contents/MacOS/ProcessorControl";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ProcessorControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		37913AAF1980EE7D00E3B22A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ProcessorControl.app/Contents/MacOS/ProcessorControl";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ProcessorControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		37913B701980F8FB00E3B22A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_OPTIMIZATION_PROFILE_FILE = "";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"$(SRCROOT)/im.danz.ProcessorControlServer/ProcessorControlServer-Launchd.plist",
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"$(SRCROOT)/im.danz.ProcessorControlServer/ProcessorControlServer-Info.plist",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		37913B711980F8FB00E3B22A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_OPTIMIZATION_PROFILE_FILE = "";
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"$(SRCROOT)/im.danz.ProcessorControlServer/ProcessorControlServer-Launchd.plist",
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"$(SRCROOT)/im.danz.ProcessorControlServer/ProcessorControlServer-Info.plist",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		37D2D88D1980FFED0043A48D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
+			};
+			name = Debug;
+		};
+		37D2D88E1980FFED0043A48D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
+			};
+			name = Release;
+		};
+		37D2D8971981003A0043A48D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_OPTIMIZATION_PROFILE_FILE = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				LD_DYLIB_INSTALL_NAME = "@executable_path/../Frameworks/libprocessorcontrolr.dylib";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		37D2D8981981003A0043A48D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_OPTIMIZATION_PROFILE_FILE = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "";
+				EXECUTABLE_PREFIX = lib;
+				LD_DYLIB_INSTALL_NAME = "@executable_path/../Frameworks/libprocessorcontrolr.dylib";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.9;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37913A881980EE7D00E3B22A /* Build configuration list for PBXProject "ProcessorControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37913AA81980EE7D00E3B22A /* Debug */,
+				37913AA91980EE7D00E3B22A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37913AAA1980EE7D00E3B22A /* Build configuration list for PBXNativeTarget "ProcessorControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37913AAB1980EE7D00E3B22A /* Debug */,
+				37913AAC1980EE7D00E3B22A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37913AAD1980EE7D00E3B22A /* Build configuration list for PBXNativeTarget "ProcessorControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37913AAE1980EE7D00E3B22A /* Debug */,
+				37913AAF1980EE7D00E3B22A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37913B6F1980F8FB00E3B22A /* Build configuration list for PBXNativeTarget "im.danz.ProcessorControlServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37913B701980F8FB00E3B22A /* Debug */,
+				37913B711980F8FB00E3B22A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37D2D88C1980FFED0043A48D /* Build configuration list for PBXNativeTarget "processorcontrol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37D2D88D1980FFED0043A48D /* Debug */,
+				37D2D88E1980FFED0043A48D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37D2D8961981003A0043A48D /* Build configuration list for PBXNativeTarget "processorcontrolr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37D2D8971981003A0043A48D /* Debug */,
+				37D2D8981981003A0043A48D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37913A851980EE7D00E3B22A /* Project object */;
+}
