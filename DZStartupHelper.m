@@ -20,7 +20,7 @@
         CFArrayRef fileList = LSSharedFileListCopySnapshot(startupItems, &seedValue);
         if (fileList) {
             for (i = 0; i < CFArrayGetCount(fileList) && !retval; i++) {
-                if ((url = LSSharedFileListItemCopyResolvedURL((LSSharedFileListItemRef)CFArrayGetValueAtIndex(fileList, i), 0, NULL)) != NULL) {
+                if (LSSharedFileListItemResolve((LSSharedFileListItemRef)CFArrayGetValueAtIndex(fileList, i), 0, &url, NULL) == noErr && url) {
                       lastComp = CFURLCopyLastPathComponent(url);
                       if (lastComp) {
                           if (CFStringCompare(lastComp, (__bridge CFStringRef)[[[NSBundle mainBundle] bundleURL] lastPathComponent], kCFCompareCaseInsensitive) == kCFCompareEqualTo) {
@@ -48,7 +48,7 @@
         CFArrayRef fileList = LSSharedFileListCopySnapshot(startUpItems, &seedValue);
         if (fileList) {
             for (i = 0; i < CFArrayGetCount(fileList) && startUpItem == NULL; i++) {
-                if ((url = LSSharedFileListItemCopyResolvedURL((LSSharedFileListItemRef)CFArrayGetValueAtIndex(fileList, i), 0, NULL)) != NULL) {
+                if (LSSharedFileListItemResolve((LSSharedFileListItemRef)CFArrayGetValueAtIndex(fileList, i), 0, &url, NULL) == noErr && url) {
                       lastComp = CFURLCopyLastPathComponent(url);
                       if (lastComp) {
                           if (CFStringCompare(lastComp, (__bridge CFStringRef)[[[NSBundle mainBundle] bundleURL] lastPathComponent], kCFCompareCaseInsensitive) == kCFCompareEqualTo) {

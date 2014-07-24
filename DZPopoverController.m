@@ -12,6 +12,10 @@
 
 #import "NSImage+invert.h"
 
+@interface NSStatusItem ()
+@property (nonatomic) NSButton *button;
+@end
+
 @implementation DZPopoverController {
   NSStatusItem *_statusItem;
   NSViewController *_viewContoller;
@@ -104,7 +108,7 @@
   [self setShowing:showing];
 }
 
-- (void)statusItemTapped:(NSStatusBarButton *)button {
+- (void)statusItemTapped:(NSButton *)button {
   [self setShowing:button.state == NSOnState];
 }
 

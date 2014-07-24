@@ -13,6 +13,10 @@
 #import "DZViewContollerAdditions.h"
 #import "NSObject+DelayedBlock.h"
 
+@interface NSStatusItem ()
+@property (nonatomic) NSButton *button;
+@end
+
 @implementation DZPopoverWindowController
 
 - (id)initWithStatusItem:(NSStatusItem *)item viewController:(NSViewController *)viewController callback:(void (^)(BOOL))cb {
@@ -93,7 +97,7 @@
 
 - (NSRect)statusRectForWindow:(NSWindow *)window {
   if ([_statusItem respondsToSelector:@selector(button)]) {
-    return [_statusItem.button.window convertRectToScreen:_statusItem.button.frame];
+    return [[(NSButton *)[_statusItem performSelector:@selector(button)] window] convertRectToScreen:_statusItem.button.frame];
   } else {
     return [_statusItem.view.window convertRectToScreen:_statusItem.view.frame];
   }
