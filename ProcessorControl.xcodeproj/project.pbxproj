@@ -301,9 +301,6 @@
 		37913A841980EE7D00E3B22A = {
 			isa = PBXGroup;
 			children = (
-				37913AE91980EF9600E3B22A /* Views */,
-				37913ADA1980EE9B00E3B22A /* Helpers */,
-				37913AB01980EE8300E3B22A /* MenuBar Framework */,
 				37913A8F1980EE7D00E3B22A /* ProcessorControl */,
 				37913B301980F2C000E3B22A /* libprocessorcontrol */,
 				37913B6C1980F8FB00E3B22A /* im.danz.ProcessorControlServer */,
@@ -328,6 +325,9 @@
 		37913A8F1980EE7D00E3B22A /* ProcessorControl */ = {
 			isa = PBXGroup;
 			children = (
+				37913AB01980EE8300E3B22A /* MenuBar */,
+				37913ADA1980EE9B00E3B22A /* Helpers */,
+				37913AE91980EF9600E3B22A /* Views */,
 				37913A941980EE7D00E3B22A /* PCAppDelegate.h */,
 				37913A951980EE7D00E3B22A /* PCAppDelegate.m */,
 				37913B861980FD3100E3B22A /* PCMainViewController.h */,
@@ -374,7 +374,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		37913AB01980EE8300E3B22A /* MenuBar Framework */ = {
+		37913AB01980EE8300E3B22A /* MenuBar */ = {
 			isa = PBXGroup;
 			children = (
 				37913AB11980EE9600E3B22A /* DZPopoverWindowController.xib */,
@@ -406,7 +406,7 @@
 				37913ACB1980EE9600E3B22A /* NSImage+invert.h */,
 				37913ACC1980EE9600E3B22A /* NSImage+invert.m */,
 			);
-			name = "MenuBar Framework";
+			path = MenuBar;
 			sourceTree = "<group>";
 		};
 		37913ADA1980EE9B00E3B22A /* Helpers */ = {
@@ -422,7 +422,7 @@
 				37913AE31980EEA500E3B22A /* Helpers.c */,
 				37913AE41980EEA500E3B22A /* Macros.h */,
 			);
-			name = Helpers;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		37913AE91980EF9600E3B22A /* Views */ = {
@@ -432,7 +432,7 @@
 				37913AEB1980EF9C00E3B22A /* DZMatrixViewDelegate.h */,
 				37913AEC1980EF9C00E3B22A /* DZMatrixView.m */,
 			);
-			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		37913AEE1980EFB000E3B22A /* Fonts */ = {
