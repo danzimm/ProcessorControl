@@ -11,8 +11,13 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="PCAppDelegate"/>
+        <customObject id="Voe-Tx-rLC" customClass="PCAppDelegate">
+            <connections>
+                <outlet property="updater" destination="E1W-g8-lwY" id="htw-GP-K0E"/>
+            </connections>
+        </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="E1W-g8-lwY" customClass="SUUpdater"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
                 <menuItem title="ProcessorControl" id="1Xt-HY-uBw">

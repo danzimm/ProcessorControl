@@ -63,6 +63,8 @@
 		37913B921980FD4000E3B22A /* PCPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913B8E1980FD4000E3B22A /* PCPreferencesController.m */; };
 		37913B931980FD4000E3B22A /* PCMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37913B901980FD4000E3B22A /* PCMenuController.m */; };
 		37913B941980FDC400E3B22A /* processorcontrol.defs in Sources */ = {isa = PBXBuildFile; fileRef = 37913B3D1980F4B900E3B22A /* processorcontrol.defs */; };
+		37AA75E81983BCA400532401 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AA75E71983BCA400532401 /* Sparkle.framework */; };
+		37AA75E91983BCAF00532401 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 37AA75E71983BCA400532401 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		37D2D88F1980FFF30043A48D /* libprocessorcontrol.c in Sources */ = {isa = PBXBuildFile; fileRef = 37913B401980F54D00E3B22A /* libprocessorcontrol.c */; };
 		37D2D8901980FFF50043A48D /* processorcontrol.defs in Sources */ = {isa = PBXBuildFile; fileRef = 37913B3D1980F4B900E3B22A /* processorcontrol.defs */; };
 		37D2D8991981009F0043A48D /* libprocessorcontrol.c in Sources */ = {isa = PBXBuildFile; fileRef = 37913B401980F54D00E3B22A /* libprocessorcontrol.c */; };
@@ -149,6 +151,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				37F57AF51981AC2500A48A97 /* libprocessorcontrolr.dylib in CopyFiles */,
+				37AA75E91983BCAF00532401 /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +248,7 @@
 		37913B8E1980FD4000E3B22A /* PCPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCPreferencesController.m; sourceTree = "<group>"; };
 		37913B8F1980FD4000E3B22A /* PCMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCMenuController.h; sourceTree = "<group>"; };
 		37913B901980FD4000E3B22A /* PCMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCMenuController.m; sourceTree = "<group>"; };
+		37AA75E71983BCA400532401 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		37D2D88B1980FFED0043A48D /* libprocessorcontrol.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libprocessorcontrol.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D2D8951981003A0043A48D /* libprocessorcontrolr.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libprocessorcontrolr.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -255,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37D2D89B198100C80043A48D /* libprocessorcontrolr.dylib in Frameworks */,
+				37AA75E81983BCA400532401 /* Sparkle.framework in Frameworks */,
 				37913B231980F1B900E3B22A /* Cocoa.framework in Frameworks */,
 				37913B241980F1B900E3B22A /* Security.framework in Frameworks */,
 				37913B251980F1B900E3B22A /* ServiceManagement.framework in Frameworks */,
@@ -475,6 +480,7 @@
 		37913B221980F19C00E3B22A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				37AA75E71983BCA400532401 /* Sparkle.framework */,
 				37913B201980F18800E3B22A /* Cocoa.framework */,
 				37913B1E1980F18400E3B22A /* Security.framework */,
 				37913B1C1980F17C00E3B22A /* ServiceManagement.framework */,
@@ -899,6 +905,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"/Users/Dan/Downloads/Sparkle-1.7.1-2",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = ProcessorControl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -919,6 +927,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"/Users/Dan/Downloads/Sparkle-1.7.1-2",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = ProcessorControl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";

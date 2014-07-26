@@ -8,9 +8,12 @@
 
 @import AppKit;
 
+#import <Sparkle/Sparkle.h>
+
 @class DZPreferencesWindowController;
 @interface PCAppDelegate : NSObject <NSApplicationDelegate>
 
+@property (nonatomic) IBOutlet SUUpdater *updater;
 @property (nonatomic) IBOutlet DZPreferencesWindowController *preferencesWindowController;
 
 @end
